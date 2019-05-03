@@ -1,0 +1,19 @@
+{
+  "name": "strangermatch",
+  "version": "1.0.0",
+  "description": "Simple node server that helps match strangers.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "StrangerMatch"
+  },
+  "author": "Matt Sauermilch",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

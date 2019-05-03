@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Match a Stranger!</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!--Maybe add fancy font later-->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+      <div class="container" >
+        <div class="row">
+        <div class="col-12 align-self-center m-2 p-5 bg-light rounded">
+        
+        <h2><strong>Match a Stranger!</strong></h2>
+        <h3>Survey Question</h3>
+        <hr>
+         
+      <div class="form-group">
+        <h4>Profile name:</h4>
+        <input type="text" placeholder="required" id="newName" class="form-control" style="width: 600px;" required>
+        </div>
+
+      <div class="form-group">
+        <h4>Profile photo:</h4>
+        <input type="text" placeholder="url required" id="newPhoto" class="form-control" style="width: 600px;" required>
+      </div>
+        <hr>
+
+      <div class="form-group">
+        <h5>Question 1</h5>
+        <h6>Do you enjoy meeting strangers?</h6>
+          <select class="custom-select" id="q1" style="width: 400px;">
+              <option selected>Please make a selection</option>
+              <option value="1">One (not into it)</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+              <option value="6">Six</option>
+              <option value="7">Seven</option>
+              <option value="8">Eight</option>
+              <option value="9">Nine (STOKED!)</option>
+            </select>
+      </div>
+        <br>
+
+      <div class="form-group">
+        <h5>Question 2</h5>
+        <h6>Do you enjoy doing activities out on the town?</h6>
+          <select class="custom-select" id="q2" style="width: 400px;">
+              <option selected>Please make a selection</option>
+              <option value="1">One (not into it)</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+              <option value="6">Six</option>
+              <option value="7">Seven</option>
+              <option value="8">Eight</option>
+              <option value="9">Nine (STOKED!)</option>
+            </select>
+      </div>
+        <br>
+
+      <div class="form-group">
+        <h5>Question 3</h5>
+        <h6>Is couch time important to you?</h6>
+          <select class="custom-select" id="q3" style="width: 400px;">
+              <option selected>Please make a selection</option>
+              <option value="1">One (not into it)</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+              <option value="6">Six</option>
+              <option value="7">Seven</option>
+              <option value="8">Eight</option>
+              <option value="9">Nine (STOKED!)</option>
+            </select>
+      </div>
+        <br>
+
+      <div class="form-group">
+        <h5>Question 4</h5>
+        <h6>How do you feel about Yoga pants?</h6>
+          <select class="custom-select" id="q4" style="width: 400px;">
+              <option selected>Please make a selection</option>
+              <option value="1">One (not into it)</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+              <option value="6">Six</option>
+              <option value="7">Seven</option>
+              <option value="8">Eight</option>
+              <option value="9">Nine (STOKED!)</option>
+            </select>
+      </div>
+        <br>
+
+      <div class="form-group">
+        <h5>Question 5</h5>
+        <h6>Is physical activity important?</h6>
+          <select class="custom-select" id="q5" style="width: 400px;">
+              <option selected>Please make a selection</option>
+              <option value="1">One (not into it)</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+              <option value="6">Six</option>
+              <option value="7">Seven</option>
+              <option value="8">Eight</option>
+              <option value="9">Nine (STOKED!)</option>
+            </select>
+      </div>
+        <br>
+
+      <div class="form-group">
+        <h5>Question 6</h5>
+        <h6>How important is financial security?</h6>
+          <select class="custom-select" id="q6" style="width: 400px;">
+              <option selected>Please make a selection</option>
+              <option value="1">One (not into it)</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+              <option value="6">Six</option>
+              <option value="7">Seven</option>
+              <option value="8">Eight</option>
+              <option value="9">Nine (STOKED!)</option>
+            </select>
+      </div>
+        <br>
+
+      <div class="form-group">
+        <h5>Question 7</h5>
+        <h6>How interested are you in Arts & Culture?</h6>
+          <select class="custom-select" id="q7" style="width: 400px;">
+              <option selected>Please make a selection</option>
+              <option value="1">One (not into it)</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+              <option value="6">Six</option>
+              <option value="7">Seven</option>
+              <option value="8">Eight</option>
+              <option value="9">Nine (STOKED!)</option>
+            </select>
+      </div>
+        <br>
+
+      <div class="form-group">
+        <h5>Question 8</h5>
+        <h6>Are you food conscious are you? </h6>
+          <select class="custom-select" id="q8" style="width: 400px;">
+              <option selected>Please make a selection</option>
+              <option value="1">One (not into it)</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+              <option value="6">Six</option>
+              <option value="7">Seven</option>
+              <option value="8">Eight</option>
+              <option value="9">Nine (STOKED!)</option>
+            </select>
+      </div>
+        <br>
+
+      <div class="form-group">
+        <h5>Question 9</h5>
+        <h6>How important is personally appearance to you?</h6>
+          <select class="custom-select" id="q9" style="width: 400px;">
+              <option selected>Please make a selection</option>
+              <option value="1">One (not into it)</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+              <option value="6">Six</option>
+              <option value="7">Seven</option>
+              <option value="8">Eight</option>
+              <option value="9">Nine (STOKED!)</option>
+            </select>
+      </div>
+        <br>
+
+      <div class="form-group">
+        <h5>Question 10</h5>
+        <h6>How important is a partners personally appearence?</h6>
+          <select class="custom-select" id="q10" style="width: 400px;">
+              <option selected>Please make a selection</option>
+              <option value="1">One (not into it)</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+              <option value="6">Six</option>
+              <option value="7">Seven</option>
+              <option value="8">Eight</option>
+              <option value="9">Nine (STOKED!)</option>
+            </select>
+      </div>
+        <br>
+       
+
+        <button type="submit" class="btn btn-primary btn-md btn-block" data-toggle="modal" data-target="#exampleModalCenter" id="submit" style="width: 350px;">Submit</button>
+        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"></button> -->
+        <hr>
+        
+       </div>
+      </div>
+      </div>
+
+        <br><br>
+
+    <footer>
+      <h6><center>Copywriten by Stranger-Finder &copy;</center></h6>
+    </footer>
+
+        <br>
+
+  <!-- Modal Bootstrap -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Have you meet...</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id=newStrangerName><h3>New Stranger</h3></div>
+            <div id=newStrangerPhoto>Photo</div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" style="width: 200px;">Send a Wave </button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+         $("#submit").on("click", (event) =>{
+          //  event.preventDefault();
+           var newStranger = 
+            { name : $("#newName").val().trim(),
+              photo : $("#newPhoto").val().trim(),
+              score : [
+                      $("#q1").val(),
+                      $("#q2").val(),
+                      $("#q3").val(),
+                      $("#q4").val(),
+                      $("#q5").val(),
+                      $("#q6").val(),
+                      $("#q7").val(),
+                      $("#q8").val(),
+                      $("#q9").val(),
+                      $("#q10").val()
+                      ]
+            };
+           // Delete, For Testing Perpose
+           console.log("submitted: \n" +
+                            "name: " + newStranger.name + "\n" +
+                           "photo: " + newStranger.photo + "\n" +
+                           "score: " + newStranger.score[0] + "\n" +
+                                       newStranger.score[1] + "\n" +
+                                       newStranger.score[2] + "\n" +
+                                       newStranger.score[3] + "\n" +
+                                       newStranger.score[4] + "\n" +
+                                       newStranger.score[5] + "\n" +
+                                       newStranger.score[6] + "\n" +
+                                       newStranger.score[7] + "\n" +
+                                       newStranger.score[8] + "\n" +
+                                       newStranger.score[9]
+                                       );
+         });
+      </script>
+
+    </body>
+</html>
