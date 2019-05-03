@@ -1,10 +1,9 @@
-module.exports = strangers;
 
-var strangers = [
+  const strangerData = [
   
   { "name" : "adam Sample ",
     "photo" : "https://vignette.wikia.nocookie.net/biblestudy/images/6/66/Adam_head_shot.jpg/revision/latest?cb=20130423194610",
-    "scores" : [
+    "score" : [
         8,
         8,
         8,
@@ -20,7 +19,7 @@ var strangers = [
 
  { "name" : "johnny2 ",
     "photo" : "https://vignette.wikia.nocookie.net/biblestudy/images/6/66/Adam_head_shot.jpg/revision/latest?cb=20130423194610",
-    "scores" : [
+    "score" : [
         1,
         2,
         3,
@@ -36,7 +35,7 @@ var strangers = [
 
    { "name" : "DeadBeatJohnny3 ",
     "photo" : "https://assets.rebelcircus.com/blog/wp-content/uploads/2018/04/4234234-20.jpg",
-    "scores" : [
+    "score" : [
         1,
         1,
         1,
@@ -52,7 +51,7 @@ var strangers = [
 
   { "name" : "NotSoDeadBeatJohnny4 ",
     "photo" : "https://vignette.wikia.nocookie.net/biblestudy/images/6/66/Adam_head_shot.jpg/revision/latest?cb=20130423194610",
-    "scores" : [
+    "score" : [
         3,
         3,
         3,
@@ -68,7 +67,7 @@ var strangers = [
 
  { "name" : "OkJohnny5 ",
     "photo" : "https://vignette.wikia.nocookie.net/biblestudy/images/6/66/Adam_head_shot.jpg/revision/latest?cb=20130423194610",
-    "scores" : [
+    "score" : [
         5,
         5,
         5,
@@ -84,7 +83,7 @@ var strangers = [
 
    { "name" : "Bad Johnny",
     "photo" : "https://cdn-images-1.medium.com/max/1600/1*JSJ7ludQpz1wmhaWRhiA8w.jpeg",
-    "scores" : [
+    "score" : [
         6,
         6,
         6,
@@ -100,7 +99,7 @@ var strangers = [
 
   { "name" : "BOT ",
     "photo" : "https://vignette.wikia.nocookie.net/biblestudy/images/6/66/Adam_head_shot.jpg/revision/latest?cb=20130423194610",
-    "scores" : [
+    "score" : [
         1,
         1,
         1,
@@ -116,7 +115,7 @@ var strangers = [
 
  { "name" : "BOT",
     "photo" : "https://vignette.wikia.nocookie.net/biblestudy/images/6/66/Adam_head_shot.jpg/revision/latest?cb=20130423194610",
-    "scores" : [
+    "score" : [
         3,
         3,
         3,
@@ -132,7 +131,7 @@ var strangers = [
 
    { "name" : "BOT ",
     "photo" : "https://vignette.wikia.nocookie.net/biblestudy/images/6/66/Adam_head_shot.jpg/revision/latest?cb=20130423194610",
-    "scores" : [
+    "score" : [
         5,
         5,
         5,
@@ -148,7 +147,7 @@ var strangers = [
 
   { "name" : "BOT",
     "photo" : "https://vignette.wikia.nocookie.net/biblestudy/images/6/66/Adam_head_shot.jpg/revision/latest?cb=20130423194610",
-    "scores" : [
+    "score" : [
         8,
         8,
         8,
@@ -163,3 +162,5 @@ var strangers = [
   }
 
 ];
+
+module.exports = strangerData;

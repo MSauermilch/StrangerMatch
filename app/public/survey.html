@@ -253,7 +253,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script>
-         $("#submit").on("click", (event) =>{
+         $("#submit").on("click", function (event) {
           //  event.preventDefault();
            var newStranger = 
             { name : $("#newName").val().trim(),
@@ -271,22 +271,13 @@
                       $("#q10").val()
                       ]
             };
-           // Delete, For Testing Perpose
-           console.log("submitted: \n" +
-                            "name: " + newStranger.name + "\n" +
-                           "photo: " + newStranger.photo + "\n" +
-                           "score: " + newStranger.score[0] + "\n" +
-                                       newStranger.score[1] + "\n" +
-                                       newStranger.score[2] + "\n" +
-                                       newStranger.score[3] + "\n" +
-                                       newStranger.score[4] + "\n" +
-                                       newStranger.score[5] + "\n" +
-                                       newStranger.score[6] + "\n" +
-                                       newStranger.score[7] + "\n" +
-                                       newStranger.score[8] + "\n" +
-                                       newStranger.score[9]
-                                       );
-         });
+
+           $.post("/api/strangerData", newStranger, function(strangerMatch){
+
+              $("#newStrangerName").text(strangerMatch.name);
+              $("#newStrangerPhoto").attr("src", strangerMatch.photo);
+           });
+          });
       </script>
 
     </body>
