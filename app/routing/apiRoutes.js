@@ -15,14 +15,14 @@ module.exports = function(app) {
         // Survey Score Array
         var newStrangerScore = req.body.score;
 
-        var lastDiff = 41; //<=== need to refactor
+        var lastDiff = 81;
         var strangerNum = 0;
 
         for (var i = 0; i < strangerData.length; i ++) {
           
           var totalDiff = 0;
 
-          for (var j =0; j < newStrangerScore.length; j++) {
+          for (var j = 0; j < newStrangerScore.length; j++) {
             if (newStrangerScore[j] > strangerData[i].score[j]) {
               var diffScore = newStrangerScore[j] - strangerData[i].score[j];
             } else if (newStrangerScore[j] < strangerData[i].score[j]) {

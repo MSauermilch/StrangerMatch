@@ -225,7 +225,6 @@
     <footer>
       <h6><center>Copywriten by Stranger-Finder &copy;</center></h6>
     </footer>
-
         <br>
 
   <!-- Modal Bootstrap -->
@@ -237,24 +236,26 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             </button>
           </div>
+
           <div class="modal-body">
-            <div id=newStrangerName><h3>New Stranger</h3></div>
-            <div id=newStrangerPhoto>Photo</div>
+              <h2><div id=newStrangerName></div></h2>
+            <div><img id="newStrangerPhoto"></div>
           </div>
+
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" style="width: 200px;">Send a Wave </button>
+            <button type="button" class="btn btn-primary" style="width: 200px;">Send a Wave </button> <!--WAVE BUTTON-->
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
     </div>
-    
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script>
          $("#submit").on("click", function (event) {
-          //  event.preventDefault();
+           event.preventDefault();
            var newStranger = 
             { name : $("#newName").val().trim(),
               photo : $("#newPhoto").val().trim(),
