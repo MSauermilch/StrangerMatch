@@ -8,7 +8,12 @@ module.exports = function(app) {
         res.sendFile(path.join(__dirname, "../public/survey.html"));
     });
 
-    // Home page/No matching route
+    // No matching route
+    app.get("/", function(req, res) {
+        res.sendFile(path.join(__dirname, "../public/home.html"));
+    });
+
+    // No matching route
     app.get("*", function(req, res) {
         res.sendFile(path.join(__dirname, "../public/home.html"));
     });
