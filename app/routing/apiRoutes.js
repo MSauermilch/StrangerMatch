@@ -12,10 +12,12 @@ module.exports = function(app) {
 
         // New Stranger's Name
         var newStranger = req.body.name;
+
         // Survey Score Array
         var newStrangerScore = req.body.score;
 
-        var lastDiff = 81;
+        // Match Logic 
+        var lastDiff = 90;
         var strangerNum = 0;
 
         for (var i = 0; i < strangerData.length; i ++) {
@@ -35,7 +37,10 @@ module.exports = function(app) {
             strangerNum = i;
           }
         };
+
+          // Server Match
           console.log(strangerData[strangerNum]);
+
           strangerData.push(newStranger);
 
           let strangerMatch = strangerData[strangerNum];

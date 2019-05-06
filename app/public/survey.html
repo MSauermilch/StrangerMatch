@@ -6,9 +6,12 @@
   <title>Match a Stranger!</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <!--Maybe add fancy font later-->
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
@@ -19,18 +22,21 @@
         <h2><strong>Match a Stranger!</strong></h2>
         <h3>Survey Question</h3>
         <hr>
-         
+      
+      <!-- User Name -->
       <div class="form-group">
         <h4>Profile name:</h4>
         <input type="text" placeholder="required" id="newName" class="form-control" style="width: 600px;" required>
         </div>
 
+      <!-- Photo Input -->
       <div class="form-group">
         <h4>Profile photo:</h4>
         <input type="text" placeholder="url required" id="newPhoto" class="form-control" style="width: 600px;" required>
       </div>
         <hr>
 
+      <!-- Question 01 -->
       <div class="form-group">
         <h5>Question 1</h5>
         <h6>Do you enjoy meeting strangers?</h6>
@@ -49,6 +55,7 @@
       </div>
         <br>
 
+      <!-- Question 02 -->
       <div class="form-group">
         <h5>Question 2</h5>
         <h6>Do you enjoy doing activities out on the town?</h6>
@@ -67,6 +74,7 @@
       </div>
         <br>
 
+      <!-- Question 03 -->
       <div class="form-group">
         <h5>Question 3</h5>
         <h6>Is couch time important to you?</h6>
@@ -85,6 +93,7 @@
       </div>
         <br>
 
+      <!-- Question 04 -->
       <div class="form-group">
         <h5>Question 4</h5>
         <h6>How do you feel about Yoga pants?</h6>
@@ -103,6 +112,7 @@
       </div>
         <br>
 
+      <!-- Question 05 -->
       <div class="form-group">
         <h5>Question 5</h5>
         <h6>Is physical activity important?</h6>
@@ -121,6 +131,7 @@
       </div>
         <br>
 
+      <!-- Question 06 -->
       <div class="form-group">
         <h5>Question 6</h5>
         <h6>How important is financial security?</h6>
@@ -139,6 +150,7 @@
       </div>
         <br>
 
+      <!-- Question 07 -->
       <div class="form-group">
         <h5>Question 7</h5>
         <h6>How interested are you in Arts & Culture?</h6>
@@ -157,6 +169,7 @@
       </div>
         <br>
 
+      <!-- Question 08 -->
       <div class="form-group">
         <h5>Question 8</h5>
         <h6>Are you food conscious are you? </h6>
@@ -175,6 +188,7 @@
       </div>
         <br>
 
+      <!-- Question 09 -->
       <div class="form-group">
         <h5>Question 9</h5>
         <h6>How important is personally appearance to you?</h6>
@@ -193,6 +207,7 @@
       </div>
         <br>
 
+      <!-- Question 10 -->
       <div class="form-group">
         <h5>Question 10</h5>
         <h6>How important is a partners personally appearence?</h6>
@@ -211,51 +226,85 @@
       </div>
         <br>
        
-
-        <button type="submit" class="btn btn-primary btn-md btn-block" data-toggle="modal" data-target="#exampleModalCenter" id="submit" style="width: 350px;">Submit</button>
-        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"></button> -->
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary btn-md btn-block" data-toggle="modal" data-target="#ModalCenter" id="submit" style="width: 350px;">Submit</button>
+        
         <hr>
         
        </div>
       </div>
       </div>
 
-        <br><br>
+      <br><br><br>
 
     <footer>
-      <h6><center>Copywriten by Stranger-Finder &copy;</center></h6>
+      <center><p style="color:darkgrey">--  StrangerMatch &copy; 2019  --</p></center>
     </footer>
         <br>
 
   <!-- Modal Bootstrap -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
+
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLongTitle">Have you meet...</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            </button>
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button> -->
           </div>
 
           <div class="modal-body">
-              <h2><div id=newStrangerName></div></h2>
-            <div><img id="newStrangerPhoto"></div>
+            <h2><center><div id=newStrangerName style= "margin:5px;"></div></center></h2> <!--StrangerMatchName -->
+            <div style="padding:5px"><center><img id="newStrangerPhoto" style="width:250px"> </center> </div> <!--StrangerMAtchPhoto-->
           </div>
 
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" style="width: 200px;">Send a Wave </button> <!--WAVE BUTTON-->
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" id="wave" class="btn btn-primary" style="width: 200px;">Send a Wave </button> <!--WAVE BUTTON-->
+            <button type="button" id="close" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
-        </div>
+
       </div>
     </div>
+   </div>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <script>
-         $("#submit").on("click", function (event) {
-           event.preventDefault();
+<script>
+
+  // Sumbit Survey
+  $("#submit").on("click", function (event) {
+    event.preventDefault();
+
+    // Form Validation
+    var valid = true;
+    console.log("Form Validation: " + valid)
+
+      if($("#newName").val() === "" ||
+        $("#newPhoto").val() === "" ||
+        $("#q1").val() === "Please make a selection" ||
+        $("#q2").val() === "Please make a selection" ||
+        $("#q3").val() === "Please make a selection" ||
+        $("#q4").val() === "Please make a selection" ||
+        $("#q5").val() === "Please make a selection" ||
+        $("#q6").val() === "Please make a selection" ||
+        $("#q7").val() === "Please make a selection" ||
+        $("#q8").val() === "Please make a selection" ||
+        $("#q9").val() === "Please make a selection" ||
+        $("#q10").val() === "Please make a selection") {
+
+        var valid = false;
+        console.log("Form Validation: " + valid)
+
+        // "Error Modal"
+        $("#exampleModalLongTitle").text("");
+        $("#newStrangerName").text("Please complete all fields.");
+        $("#newStrangerPhoto").hide();
+        $("#wave").hide();
+        $("#close").hide();
+        }
+           
+      // If Validation Passes  
+      if(valid === true) {
+
+           // User's Answers
            var newStranger = 
             { name : $("#newName").val().trim(),
               photo : $("#newPhoto").val().trim(),
@@ -273,13 +322,46 @@
                       ]
             };
 
+           // Match API Response
            $.post("/api/strangerData", newStranger, function(strangerMatch){
 
+              $("#exampleModalLongTitle").text("Have you meet...");
               $("#newStrangerName").text(strangerMatch.name);
+              $("#newStrangerPhoto").show();
               $("#newStrangerPhoto").attr("src", strangerMatch.photo);
+              $("#wave").show();
+              $("#close").show();
+              
+              // Resets Survey
+              $("#newName").val("");
+              $("#newPhoto").val("");
+              $("#q1").val("Please make a selection");
+              $("#q2").val("Please make a selection");
+              $("#q3").val("Please make a selection");
+              $("#q4").val("Please make a selection");
+              $("#q5").val("Please make a selection");
+              $("#q6").val("Please make a selection");
+              $("#q7").val("Please make a selection");
+              $("#q8").val("Please make a selection");
+              $("#q9").val("Please make a selection");
+              $("#q10").val("Please make a selection");
+              console.log("Survey Reset");
            });
-          });
-      </script>
 
-    </body>
+           // Fake Wave Event
+           $("#wave").on("click", function (event){
+
+              $("#exampleModalLongTitle").text("");
+              $("#newStrangerName").text("You sent a wave!");
+              $("#newStrangerPhoto").hide();
+              $("#wave").hide();
+              $("#close").hide();
+              
+              
+            });
+      }
+    });
+
+  </script>
+  </body>
 </html>

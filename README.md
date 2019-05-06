@@ -2,23 +2,29 @@
 
 Welcome to Stranger Match! Where Strangers match. Simply fill out our servey and find a match. Enjoy!
 
-### Need to fix.
+Stranger Match is a questionnaire powered by node and express. Node is our server expressjs and is our middleware which handles our data parsing. 
 
-* Validation
-    * name
-    * photo
-    * all of the input fields
+    server.js
 
-* Modal wave button
+ Simply requiring only express.js as our only dependence makes our server pretty basic. We inigitate express with declaring it as app. 
 
-    * code fake response/modal prompt for "wave"        button
+    app.use(express.urlencoded({ extended: true }))
 
-* reset data entry after submition
+set up express as our body-parser
 
-* Finalize UI
+    app.use(express.json())
 
-* Add Commits 
+parses our incoming requests with JSON payloads
 
-* Mark up file
+We then have Two routes we define. Our HTML pages and our APIs.
+HTML simply has our Home page and our Survey page. The Survey page is where the party begins. Users are prompted to answer a survey in order to meet an online stranger. If the user enters their responses fully and pass validation, the survey form is submit. Now that we have complete user information we can compair that data to the data of our collected users.
 
-* Deploy
+    apiRoutes.js
+
+This file is where our app gathers our data from our form and from our stored data (Strangers.js). Our Users score is then compaired to our stored scores and returns a compatiable match. 
+
+Finally a footstrap modal pops up to display your match!
+There is an added feature to send a wave to your match. Althought a nice touch, sorry to say it is not yet fully functional. 
+
+I hope yall enjoy! Feel free to play around with it. 
+

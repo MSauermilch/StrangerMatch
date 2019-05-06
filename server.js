@@ -1,7 +1,6 @@
 
 //Dependences
 const express = require ("express");
-const path = require("path");
 
 //Sets Up express and sets port
 const PORT = process.env.POST || 8080;

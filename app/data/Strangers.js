@@ -1,7 +1,7 @@
 
   const strangerData = [
   
-  { "name" : "adam Sample ",
+  { "name" : "Adam Apple ",
     "photo" : "https://vignette.wikia.nocookie.net/biblestudy/images/6/66/Adam_head_shot.jpg/revision/latest?cb=20130423194610",
     "score" : [
         8,
@@ -18,7 +18,7 @@
   },
 
  { "name" : "johnny2 ",
-    "photo" : "https://vignette.wikia.nocookie.net/biblestudy/images/6/66/Adam_head_shot.jpg/revision/latest?cb=20130423194610",
+    "photo" : "https://images.fineartamerica.com/images-medium-large-5/sid-vicious-steve-hunter.jpg",
     "score" : [
         1,
         2,
@@ -34,7 +34,7 @@
   },
 
    { "name" : "DeadBeatJohnny3 ",
-    "photo" : "https://assets.rebelcircus.com/blog/wp-content/uploads/2018/04/4234234-20.jpg",
+    "photo" : "https://cps-static.rovicorp.com/3/JPG_500/MI0001/334/MI0001334256.jpg?partner=allrovi.com",
     "score" : [
         1,
         1,
@@ -49,8 +49,8 @@
       ]
   },
 
-  { "name" : "NotSoDeadBeatJohnny4 ",
-    "photo" : "https://vignette.wikia.nocookie.net/biblestudy/images/6/66/Adam_head_shot.jpg/revision/latest?cb=20130423194610",
+  { "name" : "Danzig666",
+    "photo" : "https://i.scdn.co/image/04a24a605ac224174b369ac612d001dd925dbcc1",
     "score" : [
         3,
         3,
@@ -66,7 +66,7 @@
   },
 
  { "name" : "OkJohnny5 ",
-    "photo" : "https://vignette.wikia.nocookie.net/biblestudy/images/6/66/Adam_head_shot.jpg/revision/latest?cb=20130423194610",
+    "photo" : "https://www.wired.com/images_blogs/photos/uncategorized/2007/11/15/angryhobo.jpg",
     "score" : [
         5,
         5,
