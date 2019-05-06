@@ -1,6 +1,6 @@
 # Stranger Match
 
-Welcome to Stranger Match! Where Strangers match. Simply fill out our servey and find a match. Enjoy!
+Welcome to Stranger Match! Where Strangers match. Simply fill out our survey and find a match. Enjoy!
 
 Stranger Match is a questionnaire powered by node and express. Node is our server expressjs and is our middleware which handles our data parsing. 
 
