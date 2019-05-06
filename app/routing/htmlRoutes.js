@@ -8,7 +8,7 @@ module.exports = function(app) {
         res.sendFile(path.join(__dirname, "../public/survey.html"));
     });
 
-    // No matching route
+    // Home Page route
     app.get("/", function(req, res) {
         res.sendFile(path.join(__dirname, "../public/home.html"));
     });
