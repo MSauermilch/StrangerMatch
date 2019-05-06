@@ -24,7 +24,11 @@ HTML simply has our Home page and our Survey page. The Survey page is where the 
 This file is where our app gathers our data from our form and from our stored data (Strangers.js). Our Users score is then compaired to our stored scores and returns a compatiable match. 
 
 Finally a footstrap modal pops up to display your match!
-There is an added feature to send a wave to your match. Althought a nice touch, sorry to say it is not yet fully functional. 
+Currently the server will only take in one submit.
+
+Futur Features:
+
+* Send a wave to matched Stranger.
+* Write New Users in DB to be stored.
 
 I hope yall enjoy! Feel free to play around with it. 
-
