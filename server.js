@@ -3,7 +3,7 @@
 const express = require ("express");
 
 // Sets Up express and sets port
-const PORT = process.env.POST || 3000;
+const PORT = process.env.PORT || 3000;
 
 // Inigitiates Express
 require('dotenv').config()
