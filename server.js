@@ -1,12 +1,12 @@
 
 // Dependences
+require('dotenv').config()
 const express = require ("express");
 
 // Sets Up express and sets port
 const PORT = process.env.PORT || 3000;
 
 // Inigitiates Express
-require('dotenv').config()
 const app = express();
 
 
