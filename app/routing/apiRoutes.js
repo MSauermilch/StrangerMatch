@@ -1,4 +1,4 @@
-const strangerData = require("../data/strangers");
+const strangerData = require("../data/Strangers");
 
 module.exports = function(app) {
 

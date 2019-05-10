@@ -26,9 +26,10 @@ This file is where our app gathers our data from our form and from our stored da
 Finally a footstrap modal pops up to display your match!
 Currently the server will only take in one submit.
 
-Futur Features:
+Future Features:
 
 * Send a wave to matched Stranger.
 * Write New Users in DB to be stored.
+* Currently the app will only except one entry before ending. 
 
 I hope yall enjoy! Feel free to play around with it. 
